@@ -1,0 +1,6 @@
+function Inicio(props){
+return (
+
+    
+)
+}
