@@ -5,6 +5,8 @@ import CarruselIngreso from './components/CarruselIngreso';
 import Navbar from './components/Navbar';
 import Nosotros from './components/Nosotros';
 import Inicio from './components/Inicio';
+import Contactenos from './components/Contactenos';
+import {Route, Routes} from 'react-router-dom';
 
 
 function App() {
@@ -13,11 +15,12 @@ function App() {
     <div className='APP'>
     <Navbar/>
     </div>
-    <div>
-    <CarruselIngreso/>
-    </div>
-    <Nosotros/>
-    <Inicio/>
+    <Routes>
+    <Route path="/" element={<CarruselIngreso/>}/>
+    <Route path="/Nosotros" element={<Nosotros/>}/>
+    <Route path="/Inicio" element={<Inicio/>}/>
+    <Route path="/Contactenos" element={<Contactenos/>}/>
+    </Routes>
   </div>
   );
 }

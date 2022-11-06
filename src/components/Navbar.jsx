@@ -12,13 +12,13 @@ function Navbar (props){
       <div>
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <Link to={"/"} className="nav-link active" href="#"> Inicio </Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> Nosotros</a>
+          <Link to={"/nosotros"} className="nav-link" href="#"> Nosotros </Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Contactenos</a>
+          <Link to={"/contactenos"} className="nav-link" href="#">Contactenos</Link>
           </li>
          
         </ul>
